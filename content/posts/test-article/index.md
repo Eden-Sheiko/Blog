@@ -2,7 +2,7 @@
 title: "What 8N1 looks like on the wire"
 description: "One UART byte, bit by bit: idle, start, eight data bits LSB first, stop."
 date: 2026-10-13T16:24:43+03:00
-draft: true
+draft: false
 toc: false
 ---
 
