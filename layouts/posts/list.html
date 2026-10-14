@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="wrap blog-index" aria-labelledby="blog-title">
+  <h1 id="blog-title" class="page-title">Writing</h1>
+  <p class="page-lede">{{ site.Params.intro }}</p>
+
+  {{ with (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+  <ol class="post-list">
+    {{ range . }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006 Jan 02" }}</time>
+      <div>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </li>
+    {{ end }}
+  </ol>
+  {{ else }}
+  <p class="empty">Nothing published yet. The first article is on the bench.</p>
+  {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/" aria-label="Eden Sheiko, all articles">
+      <span class="wordmark-full">Eden Sheiko</span>
+      <span class="wordmark-short" aria-hidden="true">ES</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="/"{{ if or .IsHome (eq .Section "posts") }} aria-current="page"{{ end }}>Writing</a></li>
+        <li><a href="{{ site.Params.portfolio }}">Portfolio</a></li>
+        <li><a href="{{ site.Params.portfolio }}#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

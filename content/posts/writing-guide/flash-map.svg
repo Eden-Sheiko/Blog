@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" font-family="IBM Plex Mono, monospace" font-size="14">
+  <style>
+    .box { fill: none; stroke: #b0612d; stroke-width: 2; }
+    .boot { fill: #b0612d; fill-opacity: .12; }
+    .t { fill: #5b6270; }
+    .h { fill: #1f2329; font-family: Schibsted Grotesk, sans-serif; font-size: 16px; font-weight: 600; }
+    @media (prefers-color-scheme: dark) {
+      .box { stroke: #e0a46e; } .boot { fill: #e0a46e; }
+      .t { fill: #a9afba; } .h { fill: #eceef2; }
+    }
+  </style>
+  <rect class="boot" x="150" y="130" width="460" height="70"/>
+  <rect class="box" x="150" y="20" width="460" height="180" rx="6"/>
+  <line class="box" x1="150" y1="130" x2="610" y2="130" stroke-dasharray="6 5"/>
+  <text class="t" x="20" y="205">0x0800 0000</text>
+  <text class="t" x="20" y="135">0x0800 8000</text>
+  <text class="h" x="174" y="170">Bootloader</text>
+  <text class="t" x="174" y="190">runs first on every reset</text>
+  <text class="h" x="174" y="70">Application</text>
+  <text class="t" x="174" y="90">rewritten during an update</text>
+</svg>

@@ -1,0 +1,28 @@
+baseURL = "https://edensheiko-blog.netlify.app/"
+locale = "en"
+title = "Eden Sheiko · Writing"
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "Articles by Eden Sheiko on firmware, embedded systems and the protocols in between."
+  author = "Eden Sheiko"
+  intro = "Notes from the bench: firmware, bootloaders, buses, and the bugs that only show up on real hardware."
+  portfolio = "https://edensheiko.netlify.app/"
+
+[permalinks]
+  posts = "/posts/:contentbasename/"   # folder name = URL
+
+[markup]
+  [markup.highlight]
+    noClasses = false      # colours come from styles.css, not inline styles
+    lineNos = false
+    tabWidth = 4
+  [markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false   # lets block images become numbered figures
+  [markup.goldmark.renderer]
+    unsafe = true          # allow raw HTML in posts (diagrams, <kbd>, etc.)
+  [markup.goldmark.extensions.footnote]
+    backlinkHTML = "↩"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
