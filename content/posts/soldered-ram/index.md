@@ -2,7 +2,7 @@
 title: "Soldered RAM"
 description: "The spec sheet of my 2019 laptop says 12GB of RAM is the maximum. A forum thread said otherwise, so I opened it up."
 date: 2026-11-03T22:03:21+02:00
-draft: true
+draft: false
 toc: false        # true adds a contents box for long articles
 ---
 
